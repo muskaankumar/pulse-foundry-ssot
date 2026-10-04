@@ -1,0 +1,43 @@
+{
+  "hr": {
+    "canonical_fields": {
+      "employee_id": ["employee_id", "emp_id", "id", "employee_number", "emp_no", "staff_id"],
+      "first_name": ["first_name", "first", "fname", "given_name"],
+      "last_name": ["last_name", "last", "lname", "surname", "family_name"],
+      "job_title": ["job_title", "title", "position", "role", "job_role", "job_code"],
+      "facility": ["facility", "location", "site", "building", "facility_name", "work_location"],
+      "phone": ["phone", "phone_number", "telephone", "contact", "mobile", "cell"],
+      "license_number": ["license_number", "license_no", "license_num", "lic_no", "lic_number", "credential_number"],
+      "license_expiration": ["license_expiration", "license_exp", "lic_expiration", "lic_exp", "expiration_date", "exp_date", "credential_expiration"],
+      "hire_date": ["hire_date", "date_hired", "start_date", "employment_date"]
+    }
+  },
+  "payroll": {
+    "canonical_fields": {
+      "payroll_id": ["payroll_id", "pay_id", "transaction_id", "record_id"],
+      "employee_name": ["employee_name", "name", "emp_name", "staff_name", "worker_name"],
+      "job_code": ["job_code", "job", "position_code", "role_code", "title_code"],
+      "facility_code": ["facility_code", "facility", "location_code", "site_code", "loc_code"],
+      "period_start": ["period_start", "pay_period_start", "start_date", "period_begin"],
+      "period_end": ["period_end", "pay_period_end", "end_date", "period_close"],
+      "hours_paid": ["hours_paid", "hours", "total_hours", "hrs_paid", "hours_worked"]
+    }
+  },
+  "licenses": {
+    "canonical_fields": {
+      "license_number": ["license_number", "license_no", "lic_number", "lic_no", "credential_number", "cert_number"],
+      "name_on_license": ["name_on_license", "name", "licensee_name", "holder_name", "full_name"],
+      "license_type": ["license_type", "type", "credential_type", "cert_type", "lic_type"],
+      "expiration_date": ["expiration_date", "exp_date", "expires", "expiry", "valid_until", "lic_expiration"],
+      "last_verified": ["last_verified", "verified_date", "verification_date", "last_check", "last_checked"]
+    }
+  },
+  "schedule": {
+    "canonical_fields": {
+      "employee_name": ["employee", "name", "staff", "staff_name", "worker"],
+      "facility": ["facility", "location", "site"],
+      "day": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday",
+              "mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+    }
+  }
+}

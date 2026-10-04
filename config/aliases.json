@@ -1,0 +1,37 @@
+{
+  "facilities": {
+    "BYS": "Bayside",
+    "BAY": "Bayside",
+    "BAYSIDE": "Bayside",
+    "bayside": "Bayside",
+    "Harborview Bayside": "Bayside",
+    "HARBORVIEW BAYSIDE": "Bayside",
+    "harborview bayside": "Bayside",
+    "RVD": "Riverdale",
+    "RIV": "Riverdale",
+    "RIVERDALE": "Riverdale",
+    "riverdale": "Riverdale",
+    "Harborview Riverdale": "Riverdale",
+    "HARBORVIEW RIVERDALE": "Riverdale",
+    "harborview riverdale": "Riverdale"
+  },
+  "job_codes": {
+    "RN": "Registered Nurse",
+    "CNA": "Certified Nursing Assistant",
+    "LPN": "Licensed Practical Nurse",
+    "DON": "Director of Nursing",
+    "ADMIN": "Administrator",
+    "PT": "Physical Therapist",
+    "OT": "Occupational Therapist",
+    "SW": "Social Worker",
+    "MDS": "MDS Coordinator",
+    "DIET": "Dietitian"
+  },
+  "shift_hours": {
+    "7a-3p": 8,
+    "3p-11p": 8,
+    "11p-7a": 8,
+    "7a-7p": 12,
+    "7p-7a": 12
+  }
+}

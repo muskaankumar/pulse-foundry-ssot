@@ -1,0 +1,11 @@
+employee_id,first_name,last_name,job_title,facility,phone,license_number,license_expiration,hire_date
+E201,Sofia,Reyes,Registered Nurse,Bayside,(555) 123-4567,RN-551203,2025-03-15,06-01-2019
+E202,James,Okonkwo,Certified Nursing Assistant,Bayside,555.987.6543,CNA-884710,2027-01-20,2021-03-15
+E203,Maria,Chen,Licensed Practical Nurse,Riverdale,555-456-7890,LPN-339201,11-05-2026,2020-09-10
+E204,David,Washington,Registered Nurse,Riverdale,(555) 321-6549,RN-772045,12-01-2026,02/20/2018
+E205,Aisha,Patel,Director of Nursing,Bayside,(555) 777-8888,RN-610398,2026-12-30,2015-07-01
+E206,Carlos,Mendez,Certified Nursing Assistant,Bayside,555-111-2222,CNA-990145,2026-11-15,01-10-2022
+E207,Jennifer,Nguyen,Physical Therapist,Riverdale,(555) 333-4444,PT-445501,05-20-2027,2020-11-01
+E208,Robert,Kim,Registered Nurse,Riverdale,5556667777,RN-881234,2026-10-26,08/15/2021
+E209,Fatima,Al-Rashid,Social Worker,Bayside,555.888.9999,SW-223344,2027-09-01,2023-04-01
+E210,Marcus,Johnson,Certified Nursing Assistant,Riverdale,5550001111,CNA-556677,02/28/2027,06/15/2022

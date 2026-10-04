@@ -7,7 +7,6 @@ from pathlib import Path
 from rapidfuzz import fuzz
 
 from app.models.entities import RawRecord
-# Import existing logic to keep calculation rules centralized
 from app.ingest.pdf_loader import _normalize_day, _parse_shift_hours, _load_aliases
 
 SCHEMA_REGISTRY_PATH = Path(__file__).resolve().parents[2] / "config" / "schema_registry.json"
@@ -24,7 +23,6 @@ def _best_source_match(headers: list[str], registry: dict) -> tuple[str, dict[st
     for source, schema in registry.items():
         mapping: dict[str, str] = {}
         total_score = 0
-
         for canonical, aliases in schema["canonical_fields"].items():
             top_match = ""
             top_ratio = 0
@@ -45,7 +43,6 @@ def _best_source_match(headers: list[str], registry: dict) -> tuple[str, dict[st
             best_mapping = mapping
 
     return best_source, best_mapping
-
 
 def load_csv(file_content: str | bytes, filename: str = "unknown.csv") -> tuple[str, list[RawRecord]]:
     if isinstance(file_content, bytes):
@@ -101,7 +98,7 @@ def load_csv(file_content: str | bytes, filename: str = "unknown.csv") -> tuple[
                             "date": raw_date or "",
                             "shift": shift,
                             "hours": hours,
-                            "period_start": "2026-09-14",  # Fallback assumption for demo
+                            "period_start": "2026-09-14",  # Fallback for demo
                             "period_end": "2026-09-20",
                         },
                     },
@@ -111,8 +108,8 @@ def load_csv(file_content: str | bytes, filename: str = "unknown.csv") -> tuple[
 
     # 3. Standard parsing for HR, Payroll, and Licenses
     source_type, column_map = _best_source_match(headers, registry)
-
     records: list[RawRecord] = []
+    
     for row in reader:
         raw_data = dict(row)
         mapped_data = {}

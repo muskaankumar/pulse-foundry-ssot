@@ -1,0 +1,21 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Database files — generated locally, not committed
+data/*.db
+data/*.db-wal
+data/*.db-shm
+
+# OS files
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
